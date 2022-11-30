@@ -1,0 +1,11 @@
+<form *ngIf="showAddTask" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="fish">Fish</label>
+        <input type="text" name="fish" [(ngModel)]="fish" placeholder="Add Fish" />
+    </div>
+    <div class="form-control form-control-check">
+        <label for="remider">Set Reminder</label>
+        <input type="checkbox" name="reminder" [(ngModel)]="reminder" />
+    </div>
+    <input type="submit" value="Save Fish"/>
+</form>
